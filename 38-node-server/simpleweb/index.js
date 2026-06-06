@@ -10,6 +10,14 @@ app.get("/bye", (req, res) => {
   res.send("Good Bye");
 });
 
+app.get("/world", (req, res) => {
+  res.send("Hello world");
+});
+
+app.get("/arung", (req, res) => {
+  res.send("Hello arung");
+});
+
 app.listen(8080, () => {
   console.log("Listening on port 8080");
 });
