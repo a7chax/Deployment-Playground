@@ -7,6 +7,11 @@ const client = redis.createClient({
   host: "redis-server",
   port: 6379,
 });
+
+client.on("error", (err) => {
+  console.error("Redis Client Error", err);
+});
+
 client.set("visits", 0);
 
 app.get("/", (req, res) => {
