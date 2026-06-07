@@ -15,6 +15,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - the `-v /app/node_modules` its mean to use node_module inside the container
 - `-v $(pwd):/app` is to map pwd (Presence working directory) to the folder /app inside of container so there is `:` is to map
 
+
+#### How to run the test 
+
+#### `$ docker exec -it 8e0f6e7c9fe1 npm run test` the after is container id so adjust it then you can like press button of the test like q, enter 
+
 ## Available Scripts
 
 In the project directory, you can run:
