@@ -17,6 +17,7 @@ function App() {
         >
           Learn ReactJS
         </a>
+        <p>Arungi Cahaya</p>
       </header>
     </div>
   );

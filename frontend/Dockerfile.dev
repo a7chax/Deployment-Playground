@@ -5,6 +5,7 @@ WORKDIR '/app'
 COPY package.json .
 RUN npm install
 
-COPY . .
+# Comment the Copy because we mapping the current directory at docker-compose.yml so don need it except we need to run it on production
+# COPY . .
 
 CMD [ "npm", "run", "start" ]
