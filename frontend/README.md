@@ -8,6 +8,13 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ### `docker build -f Dockerfile.dev .`
 
+### How to run it for development more proper when you actually doing changing without rebuilding the container
+
+#### `docker run -p 3000:3000 -v /app/node_modules -v $(pwd):/app 1d07679190ab`
+
+- the `-v /app/node_modules` its mean to use node_module inside the container
+- `-v $(pwd):/app` is to map pwd (Presence working directory) to the folder /app inside of container so there is `:` is to map
+
 ## Available Scripts
 
 In the project directory, you can run:
